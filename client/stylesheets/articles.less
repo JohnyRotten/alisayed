@@ -1,0 +1,32 @@
+.articles {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  &>* { flex: 1 100%; }
+  &__item {
+    padding: 3em;
+    &__title {
+      font-size: 45px;
+      line-height: 1.467;
+    }
+    &__body {
+      font-size: 15.57px;
+      line-height: 1.798;
+      margin: 1em 0;
+    }
+    &__link {
+
+    }
+    &--first {
+      background-image: url('/images/best_strating.png');
+      background-size: cover;
+      color: rgba(38, 47, 50, 0.878);
+    }
+    &--second {
+      background-image: url('/images/verified_dummy.png');
+      background-size: cover;
+      color: rgba(255, 255, 255, 0.702);
+      .articles__item__title { color: rgb(255, 255, 255); }
+    }
+  }
+}

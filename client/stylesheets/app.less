@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,300,400,400italic,700,500,900,900italic&subset=latin,cyrillic);
+.roboto { font-family: 'Roboto', sans-serif; }
+
+* { .roboto; box-sizing: border-box; }
+
+@small-width: 800px;
+
+html { width: 100%; }
+body {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  // align-items: stretch;
+  &>* {
+    flex: 1 100%;
+    margin: 0;
+    position: relative;
+  }
+  @media all and (min-width: @small-width) {
+    .app {
+      &-image     { flex: 1 65%; }
+      &-header    { flex: 1 35%; }
+      &-services  { flex: 1 50%; }
+      &-articles  { flex: 1 50%; }
+      &-designed  { flex: 1 40%; }
+      &-say-hello { flex: 1 60%; }
+    }
+  }
+}

@@ -1,28 +1,26 @@
 <template name="sayHello">
-  <section class="say_hello">
+  <section class="say_hello app-say-hello">
     <form class="say_hello__form">
-      <div class="say_hello__form__title">Say <b>Hello</b></div>
+      <div class="say_hello__form__title">Say <b>`Hello`</b></div>
       <input type="text" name="name" class="say_hello__form__input" placeholder="Your Name"/>
       <input type="email" name="email" class="say_hello__form__input" placeholder="Your Email"/>
-      <textarea name="message" class="say_hello__form__input--textarea" placeholder="Your Message Here ..."></textarea>
+      <textarea name="message" class="say_hello__form__input say_hello__form__input--textarea" placeholder="Your Message Here ..."></textarea>
     </form>
     <footer class="say_hello__footer">
-      <div class="say_hello__footer__social_links">
-        <div class="say_hello__footer__social_links__title">
-          Stay Connected With Us...
-        </div>
-        <ul class="say_hello__footer__social_links__links">
-          <li class="say_hello__footer__social_links__links__item--blue">
-            <a href="#"><img src="/images/Facebook.png" alt="" /></a>
-          </li>
-          <li class="say_hello__footer__social_links__links__item--pink">
-            <a href="#"><img src="/images/Dribble.png" alt="" /></a>
-          </li>
-          <li class="say_hello__footer__social_links__links__item--ligth-blue">
-            <a href="#"><img src="/images/Twitter.png" alt="" /></a>
-          </li>
-        </ul>
+      <div class="say_hello__footer__paragraph">
+        Stay Connected With Us...
       </div>
+      <ul class="say_hello__footer__social_links">
+        <li class="say_hello__footer__social_links__item say_hello__footer__social_links__item--blue">
+          <a href="#"><img src="/images/Facebook.png" alt="" /></a>
+        </li>
+        <li class="say_hello__footer__social_links__item say_hello__footer__social_links__item--pink">
+          <a href="#"><img src="/images/Dribbble.png" alt="" /></a>
+        </li>
+        <li class="say_hello__footer__social_links__item say_hello__footer__social_links__item--light-blue">
+          <a href="#"><img src="/images/Twitter.png" alt="" /></a>
+        </li>
+      </ul>
       <div class="say_hello__footer__paragraph">
         Please Feel Free To Contact With me For Any Kind of Prject.
       </div>
